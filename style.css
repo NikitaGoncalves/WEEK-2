@@ -1,0 +1,163 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+  padding: 100px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+/* Backgrounds for each page */
+body.home-bg {
+  background-image: url('images/logo.png');
+}
+body.ironman-bg {
+  background-image: url('images/iornman.jpg');
+}
+body.captain-bg {
+  background-image: url('images/captainamerica1.jpg');
+}
+body.thor-bg {
+  background-image: url('images/thor.png');
+}
+body.blackwidow-bg {
+  background-image: url('images/blackwidow.jpg');
+}
+body.hulk-bg {
+  background-image: url('images/hulk1.jpg');
+}
+body.hawkeye-bg {
+  background-image: url('images/haweye1.jpg');
+}
+
+/* Avenger color-specific links */
+a[href*="ironman"] { color: #f44336; }
+a[href*="captain"] { color: #0074D9; }
+a[href*="thor"] { color: #FF851B; }
+a[href*="blackwidow"] { color: #111; }
+a[href*="hulk"] { color: #2ECC40; }
+a[href*="hawkeye"] { color: #B10DC9; }
+a[href*="contact"] { color: #ffffff; }
+
+/* Typography */
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+ul li {
+  margin-bottom: 5px;
+}
+.slogan {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.cta {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #00FFFF;
+}
+body.contact-bg {
+  background: url('images/contact-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Contact form styles */
+.contact-form {
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d32f2f;
+}
